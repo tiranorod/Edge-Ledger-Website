@@ -29,8 +29,41 @@
     padding: 0.5rem;
   }
 
-  #showcase .showcase-content {
-    top: 110px;
+  #who {
+    display: block;
   }
+
+  #who .who-img {
+    display: none;
+  }
+
+  #who .who-text  {
+    text-align: center;
+  }
+
+  #who .who-text h3 {
+    margin-top: 2rem;
+  }
+
+  #clients .items img {
+    width: 80%
+  }
+
+  #clients .items div:last-child{
+    display: none;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact .map {
+    height: 300px;
+    border-top: 4px #333 solid;
+    flex-basis: auto;
+  }
+  
+
 
 }

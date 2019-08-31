@@ -11,7 +11,6 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
-  
 }
 
 a {
@@ -145,6 +144,7 @@ p {
   background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
   height: 100vh;
   color: #fff;
+  position: relative;
 }
 
 #showcase .showcase-content{
@@ -157,10 +157,9 @@ p {
   padding: 0 2rem;
   /* Overlay */
   position: absolute;
-  top: 65px;
-  left: 0;
+  top: 0;
   right: 0;
-  bottom: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -190,6 +189,7 @@ p {
 
 #who div {
   flex: 1;
+  flex-basis: 50%;
 }
 
 #who .who-img {
@@ -214,6 +214,7 @@ p {
 
 #contact .map, #contact .contact-form {
   flex: 1;
+  flex-basis: 50%;
 }
 
 #contact .contact-form .form-group {
@@ -235,3 +236,4 @@ p {
   margin-top: 1rem;
   font-size: 1.25rem;
 }
+
