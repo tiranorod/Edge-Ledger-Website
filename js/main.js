@@ -7,7 +7,7 @@ function initMap() {
   const map = new google.maps.Map(document.querySelector( '.map' )
   , {
     center: loc,
-    zoom: 14
+    zoom: 16
   });
 
   //Add marker to be positioned at the location
@@ -15,13 +15,13 @@ function initMap() {
 }
 
 //Sticky Menu Background Fading
-window.addEventListener( 'scroll', function() {
-  if ( window.scrollY > 150 ) {
-    document.querySelector( '#navbar' ).style.opacity = 0.9;
-  } else {
-    document.querySelector( '#navbar' ).style.opacity = 1;
-  }
-});
+// window.addEventListener( 'scroll', function() {
+//   if ( window.scrollY > 150 ) {
+//     document.querySelector( '#navbar' ).style.opacity = 0.9;
+//   } else {
+//     document.querySelector( '#navbar' ).style.opacity = 0.9;
+//   }
+// });
 
 //Smooth Scrolling using jQuery
 $( '#navbar a, .btn' ).on( 'click', function(event){
@@ -32,7 +32,7 @@ $( '#navbar a, .btn' ).on( 'click', function(event){
 
     $( 'html, body' ).animate(
       {
-        scrollTop: $( hash ).offset().top - 65
+        scrollTop: $( hash ).offset().top - 76
       },
       1000
     );
@@ -43,7 +43,7 @@ $( '#navbar a, .btn' ).on( 'click', function(event){
                                        //always scroll up to exacty the top of the Session
     $( 'html, body' ).animate(         //no matter if it is on a desktop or mobile).
       {
-        scrollTop: $( hash ).offset().top - 119
+        scrollTop: $( hash ).offset().top - 138
       },
       1000
     );
